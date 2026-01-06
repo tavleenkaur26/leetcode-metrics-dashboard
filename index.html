@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeetCode Metrics Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header dashboard-element" style="--delay:0s">
+        <h1>LeetCode Metrics Dashboard</h1>
+        <button id="themeToggle">🌙</button>
+        <p>Track & visualize your LeetCode progress</p>
+    </header>
+
+    <section class="search-section dashboard-element" style="--delay:0.1s">
+        <input type="text" id="username" placeholder="Enter LeetCode Username" />
+        <button id="search-btn">Search</button>
+    </section>
+
+    <section class="stats-grid">
+        <div class="card dashboard-element" style="--delay:0.2s">
+            <h3>Total Solved</h3>
+            <p class="big-number" id="totalSolved">0</p>
+        </div>
+
+        <div class="card easy dashboard-element" style="--delay:0.3s">
+            <h3>Easy</h3>
+            <p class="big-number" id="easySolved">0</p>
+        </div>
+
+        <div class="card medium dashboard-element" style="--delay:0.4s">
+            <h3>Medium</h3>
+            <p class="big-number" id="mediumSolved">0</p>
+        </div>
+
+        <div class="card hard dashboard-element" style="--delay:0.5s">
+            <h3>Hard</h3>
+            <p class="big-number" id="hardSolved">0</p>
+        </div>
+    </section>
+
+    <section class="progress-section dashboard-element" style="--delay:0.6s">
+        <h2>Difficulty Breakdown</h2>
+
+        <div class="progress-bar">
+            <span>Easy</span>
+            <div class="bar">
+                <div class="fill easy-fill" data-percentage="0%"></div>
+            </div>
+        </div>
+
+        <div class="progress-bar">
+            <span>Medium</span>
+            <div class="bar">
+                <div class="fill medium-fill" data-percentage="0%"></div>
+            </div>
+        </div>
+
+        <div class="progress-bar">
+            <span>Hard</span>
+            <div class="bar">
+                <div class="fill hard-fill" data-percentage="0%"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="chart-section dashboard-element" style="--delay:0.7s">
+        <h2>Progress Visualization</h2>
+        <div class="chart-container">
+            <canvas id="leetcodeChart"></canvas>
+        </div>
+    </section>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
