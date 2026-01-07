@@ -1,4 +1,4 @@
-LeetCode Metrics Dashboard
+LeetCode Metrics Dashboard:
 A web app to visualize your LeetCode coding stats with interactive charts and difficulty breakdown. Track your coding progress easily and see your solved problems at a glance.
 
 Features
@@ -13,3 +13,4 @@ Tech Stack
 - HTML, CSS, JavaScript
 - Chart.js for data visualization
 - Fetch API for retrieving user stats
+
